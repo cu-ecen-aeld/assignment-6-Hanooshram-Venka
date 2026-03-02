@@ -1,0 +1,23 @@
+From 909abaa70876488e2319e51fdff787133a45906f Mon Sep 17 00:00:00 2001
+From: Hanooshram Venkateswaran <have6993@colorado.edu>
+Date: Sun, 1 Mar 2026 21:36:37 -0700
+Subject: [PATCH] Edited Makefile to build only scull and misc-modules
+
+---
+ Makefile | 5 +----
+ 1 file changed, 1 insertion(+), 4 deletions(-)
+
+diff --git a/Makefile b/Makefile
+index 7b08c49..9db8154 100644
+--- a/Makefile
++++ b/Makefile
+@@ -1,8 +1,5 @@
+ 
+-SUBDIRS =  misc-progs misc-modules \
+-           skull scull scullc scullp lddbus sculld scullv shortprint simple tty \
+-	   pci usb\
+-	   sbull snull short
++SUBDIRS = scull misc-modules
+ 
+ all: subdirs
+ 
